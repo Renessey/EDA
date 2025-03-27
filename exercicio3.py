@@ -15,3 +15,6 @@ def busca(a, b, tol):
             a = m
     return (a + b) / 2
     
+raiz = busca(1, 2, 1e-4)
+print(f"Raiz aproximada: {raiz:.4f}")
+
