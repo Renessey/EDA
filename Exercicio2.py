@@ -16,3 +16,13 @@ def Equacao(a, b, c):
         
 a, b, c = 2, 2, -6 #valores inseridos na função Equacao
 raizes = Equacao(a, b, c)
+
+#plotando os gráficos
+x = np.linspace(-4, 4, 400)
+y = a * x**2 + b * x + c
+
+plt.figure(figsize=(8, 6))
+plt.plot(x, y, label=r'$2x^2 + 2x - 6$', color='blue')
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.grid(True, linestyle='--', linewidth=0.5)
