@@ -26,3 +26,13 @@ plt.plot(x, y, label=r'$2x^2 + 2x - 6$', color='blue')
 plt.axhline(0, color='black', linewidth=0.5)
 plt.axvline(0, color='black', linewidth=0.5)
 plt.grid(True, linestyle='--', linewidth=0.5)
+
+if raizes:
+    for raiz in raizes:
+        plt.scatter(raiz, 0, color='red', zorder=3, label=f'Raiz: x = {raiz:.2f}')
+
+plt.legend()
+plt.xlabel('x')
+plt.ylabel('y')
+plt.title('Gráfico da Equação Quadrática')
+plt.show()
