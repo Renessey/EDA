@@ -13,3 +13,6 @@ def Equacao(a, b, c):
         raiz1 = (-b + np.sqrt(delta)) / (2*a)
         raiz2 = (-b - np.sqrt(delta)) / (2*a)
         return [raiz1, raiz2]
+        
+a, b, c = 2, 2, -6 #valores inseridos na função Equacao
+raizes = Equacao(a, b, c)
